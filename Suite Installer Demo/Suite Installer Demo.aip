@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="23.0" version="23.0" Modules="suite-installer" RootPath="." Language="en" Id="{94579F24-3CA2-47D8-8ED3-6CC5B1406189}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="File Component Policy" Value="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_APP_FILE" Value="[#SuiteInstaller.exe]"/>
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_EXECUTION_LEVEL" Value="2"/>
+    <ROW Property="AI_INSTALLED_PREREQS" Value="|"/>
+    <ROW Property="AI_INSTALLED_PREREQS_IMPORTANT" Value="|"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_INTERNET_CONNECTION"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="support@advancedinstaller.com"/>
+    <ROW Property="ARPHELPLINK" Value="https://www.advancedinstaller.com/user-guide/introduction.html"/>
+    <ROW Property="ARPPRODUCTICON" Value="suite_installer.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://www.advancedinstaller.com/contact.html"/>
+    <ROW Property="AiSkipExitDlg" Value="1" Type="4"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="Manufacturer" Value="Advanced Installer"/>
+    <ROW Property="ProductCode" Value="1033:{8B6FE2BB-BA38-4F2C-9E93-077A3B5670D7} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Suite Installer Demo"/>
+    <ROW Property="ProductVersion" Value="1.1.1" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{2C9E42C4-7609-4F3B-AECF-CB624A067B2B}"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 7 x86, Windows 8 x86, Windows 8.1 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1607 x86, Windows 10 version 1703 x86, Windows 10 version 1709 x86, Windows 10 version 1803 x86, Windows 10 version 1809 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1607 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows Server 2016 x64, Windows Server 2019 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1607 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows Server 2016 x64, Windows Server 2019 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:Windows 7 x86, Windows 8 x86, Windows 8.1 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1607 x86, Windows 10 version 1703 x86, Windows 10 version 1709 x86, Windows 10 version 1803 x86, Windows 10 version 1809 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="StartMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTM~1|StartMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SuiteInstaller_Dir" Directory_Parent="bin_Dir" DefaultDir="SUITEI~1|SuiteInstaller"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="afZA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="af-ZA"/>
+    <ROW Directory="amET_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="am-ET"/>
+    <ROW Directory="arSA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ar-SA"/>
+    <ROW Directory="asIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="as-IN"/>
+    <ROW Directory="assets_1_Dir" Directory_Parent="APPDIR" DefaultDir="Assets"/>
+    <ROW Directory="assets_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="assets"/>
+    <ROW Directory="azLatnAZ_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="AZ-LAT~1|az-Latn-AZ"/>
+    <ROW Directory="bgBG_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="bg-BG"/>
+    <ROW Directory="bin_Dir" Directory_Parent="APPDIR" DefaultDir="bin"/>
+    <ROW Directory="bnIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="bn-IN"/>
+    <ROW Directory="bsLatnBA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="BS-LAT~1|bs-Latn-BA"/>
+    <ROW Directory="caES_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ca-ES"/>
+    <ROW Directory="caEsVALENCIA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="CA-ES-~1|ca-Es-VALENCIA"/>
+    <ROW Directory="csCZ_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="cs-CZ"/>
+    <ROW Directory="cyGB_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="cy-GB"/>
+    <ROW Directory="daDK_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="da-DK"/>
+    <ROW Directory="deDE_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="de-DE"/>
+    <ROW Directory="elGR_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="el-GR"/>
+    <ROW Directory="enGB_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="en-GB"/>
+    <ROW Directory="enus_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="en-us"/>
+    <ROW Directory="esES_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="es-ES"/>
+    <ROW Directory="esMX_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="es-MX"/>
+    <ROW Directory="etEE_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="et-EE"/>
+    <ROW Directory="euES_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="eu-ES"/>
+    <ROW Directory="faIR_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="fa-IR"/>
+    <ROW Directory="fiFI_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="fi-FI"/>
+    <ROW Directory="filPH_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="fil-PH"/>
+    <ROW Directory="frCA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="fr-CA"/>
+    <ROW Directory="frFR_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="fr-FR"/>
+    <ROW Directory="gaIE_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ga-IE"/>
+    <ROW Directory="gdgb_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="gd-gb"/>
+    <ROW Directory="glES_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="gl-ES"/>
+    <ROW Directory="guIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="gu-IN"/>
+    <ROW Directory="heIL_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="he-IL"/>
+    <ROW Directory="hiIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="hi-IN"/>
+    <ROW Directory="hrHR_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="hr-HR"/>
+    <ROW Directory="huHU_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="hu-HU"/>
+    <ROW Directory="hyAM_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="hy-AM"/>
+    <ROW Directory="idID_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="id-ID"/>
+    <ROW Directory="isIS_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="is-IS"/>
+    <ROW Directory="itIT_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="it-IT"/>
+    <ROW Directory="jaJP_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ja-JP"/>
+    <ROW Directory="kaGE_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ka-GE"/>
+    <ROW Directory="kkKZ_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="kk-KZ"/>
+    <ROW Directory="kmKH_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="km-KH"/>
+    <ROW Directory="knIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="kn-IN"/>
+    <ROW Directory="koKR_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ko-KR"/>
+    <ROW Directory="kokIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="kok-IN"/>
+    <ROW Directory="lbLU_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="lb-LU"/>
+    <ROW Directory="loLA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="lo-LA"/>
+    <ROW Directory="ltLT_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="lt-LT"/>
+    <ROW Directory="lvLV_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="lv-LV"/>
+    <ROW Directory="miNZ_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="mi-NZ"/>
+    <ROW Directory="mkMK_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="mk-MK"/>
+    <ROW Directory="mlIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ml-IN"/>
+    <ROW Directory="mrIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="mr-IN"/>
+    <ROW Directory="msMY_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ms-MY"/>
+    <ROW Directory="mtMT_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="mt-MT"/>
+    <ROW Directory="nbNO_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="nb-NO"/>
+    <ROW Directory="neNP_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ne-NP"/>
+    <ROW Directory="nlNL_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="nl-NL"/>
+    <ROW Directory="nnNO_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="nn-NO"/>
+    <ROW Directory="orIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="or-IN"/>
+    <ROW Directory="paIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="pa-IN"/>
+    <ROW Directory="plPL_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="pl-PL"/>
+    <ROW Directory="ptBR_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="pt-BR"/>
+    <ROW Directory="ptPT_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="pt-PT"/>
+    <ROW Directory="quzPE_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="quz-PE"/>
+    <ROW Directory="roRO_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ro-RO"/>
+    <ROW Directory="ruRU_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ru-RU"/>
+    <ROW Directory="skSK_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="sk-SK"/>
+    <ROW Directory="slSI_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="sl-SI"/>
+    <ROW Directory="sqAL_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="sq-AL"/>
+    <ROW Directory="srCyrlBA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="SR-CYR~1|sr-Cyrl-BA"/>
+    <ROW Directory="srCyrlRS_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="SR-CYR~2|sr-Cyrl-RS"/>
+    <ROW Directory="srLatnRS_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="SR-LAT~1|sr-Latn-RS"/>
+    <ROW Directory="svSE_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="sv-SE"/>
+    <ROW Directory="taIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ta-IN"/>
+    <ROW Directory="teIN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="te-IN"/>
+    <ROW Directory="thTH_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="th-TH"/>
+    <ROW Directory="themes_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="themes"/>
+    <ROW Directory="trTR_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="tr-TR"/>
+    <ROW Directory="ttRU_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="tt-RU"/>
+    <ROW Directory="ugCN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ug-CN"/>
+    <ROW Directory="ukUA_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="uk-UA"/>
+    <ROW Directory="urPK_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="ur-PK"/>
+    <ROW Directory="uzLatnUZ_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="UZ-LAT~1|uz-Latn-UZ"/>
+    <ROW Directory="viVN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="vi-VN"/>
+    <ROW Directory="zhCN_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="zh-CN"/>
+    <ROW Directory="zhTW_Dir" Directory_Parent="SuiteInstaller_Dir" DefaultDir="zh-TW"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="AI_INSTALLED_PREREQS" Value="{2889E3ED-2DB8-4E3F-AC0F-AE9E743C462F}"/>
+    <ROW Component="APPDIR" Value="{6AB1F111-EAD2-4F2F-ADF0-422E854B5626}"/>
+    <ROW Component="App.xbf" Value="{8A0B4F28-749A-46DF-9DE8-416F1763C6B6}"/>
+    <ROW Component="CoreMessagingXP.dll" Value="{AE385405-3A44-4241-B3D3-FFD763D40AF3}"/>
+    <ROW Component="DWriteCore.dll" Value="{5E5514A6-4C81-44AD-A1B3-ECA6C8442861}"/>
+    <ROW Component="DwmSceneI.dll" Value="{F092F0F2-70EB-494A-96E6-810F6E47CA34}"/>
+    <ROW Component="ExternalUi.exe" Value="{0CD6A36D-DBC9-4327-B2A3-11FF61156F94}"/>
+    <ROW Component="Generic.xbf" Value="{89371557-22C0-44A4-8330-5A68CAEE0F1F}"/>
+    <ROW Component="MRM.dll" Value="{8D2F8F1A-D423-43FC-BBCC-6B3AEC12249C}"/>
+    <ROW Component="Microsoft.DirectManipulation.dll" Value="{1BCB0D67-1370-4712-A140-AFEBA5F9922B}"/>
+    <ROW Component="Microsoft.Graphics.Display.dll" Value="{0287F558-E5B3-4B1B-9D3D-8E289FD730DC}"/>
+    <ROW Component="Microsoft.InputStateManager.dll" Value="{0FEA88E2-CC1E-4BBA-BAF9-8CBD5A531586}"/>
+    <ROW Component="Microsoft.Internal.FrameworkUdk.dll" Value="{9DBE51C0-283E-4F8D-BE46-8A43B8929204}"/>
+    <ROW Component="Microsoft.UI.Composition.OSSupport.dll" Value="{7180D9E7-2653-4AFD-92CE-0B938C593383}"/>
+    <ROW Component="Microsoft.UI.Input.dll" Value="{C2EE8F45-2DB4-4D01-A7D4-9EE329EA7521}"/>
+    <ROW Component="Microsoft.UI.Windowing.Core.dll" Value="{B44D265B-8990-4F28-9D1E-A149DB5DD556}"/>
+    <ROW Component="Microsoft.UI.Windowing.dll" Value="{FF2152BE-53B9-47A5-AA75-060DCCD213F3}"/>
+    <ROW Component="Microsoft.UI.Xaml.Controls.dll" Value="{8CE686FD-70AB-4661-BD0D-B46E3A5A5BE2}"/>
+    <ROW Component="Microsoft.UI.Xaml.Internal.dll" Value="{F270900D-44C0-47BE-A505-20220AAA2A64}"/>
+    <ROW Component="Microsoft.UI.Xaml.Phone.dll" Value="{AA12CFAD-ADC9-4131-B5E1-4E9CD46F8423}"/>
+    <ROW Component="Microsoft.UI.dll" Value="{015A4E22-C8BF-424A-95C1-BDFE786EE359}"/>
+    <ROW Component="Microsoft.Web.WebView2.Core.dll" Value="{35A3F01B-806C-4749-8C3C-0EBC68712346}"/>
+    <ROW Component="Microsoft.Windows.ApplicationModel.Resources.dll" Value="{5441C273-0675-4578-9FA6-A32934FC828A}"/>
+    <ROW Component="Microsoft.Windows.Widgets.dll" Value="{759B806D-7CE6-4D9C-9B4B-C1EC5166EEFB}"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.Bootstrap.dll" Value="{01FAFB3A-9636-4CC0-91FA-9DAD34B3BDBA}"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.Insights.Resource.dll" Value="{0220E4D9-1A87-446A-A6F6-4793E1FE308C}"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.dll" Value="{B9AFFB50-6312-4A1A-B18E-2C01B6BAF035}"/>
+    <ROW Component="Microsoft.ui.xaml.dll" Value="{3AD21638-03EE-4471-B780-01F5CD235A21}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui" Value="{0129A10B-20B2-4760-8886-AF8521B507A2}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_1" Value="{1B7079B8-20CF-4E72-BB65-C5CC84B8E283}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_10" Value="{BAAD1F89-EB42-4221-80C8-96F2F7CB4230}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_11" Value="{8964CE19-4F03-4230-8177-560E491A02D7}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_12" Value="{353BAA4A-E857-46D8-AD2B-FFAC0FA95316}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_13" Value="{6C3D3007-2D87-4C5E-AA56-8EB7660FACDB}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_14" Value="{1C1836E0-44AA-46D7-BBC6-7AA36B4C41E7}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_15" Value="{B80E493E-6D51-481B-AEBA-D2E3D711AA00}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_16" Value="{E963083B-6AAD-4A33-B1A1-41B78E977F65}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_17" Value="{803A06DC-1A56-4F48-9FF6-0D0E8A9B1283}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_18" Value="{9900BB9E-588C-4399-AFE1-20360565C627}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_19" Value="{A0C83A57-452A-412B-8854-F7208600A4C5}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_2" Value="{EA3FBE0B-5E43-4818-9415-E0EDECEDB70B}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_20" Value="{F723CC20-869B-4CE5-8C90-788ADB67AEF7}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_21" Value="{4DDE91E9-A36A-4AA2-90F4-5E81A807C93D}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_22" Value="{BBCFDF57-9A6D-400A-9FCD-AFECB78FC93B}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_23" Value="{B0B4C3B7-B9FA-42C6-A990-0DC49975A5BE}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_24" Value="{76F9C73F-00A8-4AA9-95CA-E5C33495DD3E}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_25" Value="{F4464436-97B7-4CC6-A6B0-4242E6AE5240}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_26" Value="{0EC3D8D5-C04D-4FA0-B81A-55C7F8903555}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_27" Value="{78118346-C5E1-4AC2-86A6-5BCC5C1F5466}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_28" Value="{36B38E4C-059A-4573-85E7-95DD8733916B}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_29" Value="{BF9F3063-4F48-4975-BAC2-97FDD0DD881B}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_3" Value="{D24123E5-0796-4C0D-8460-DB88E01C507F}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_30" Value="{A8BA5857-D345-4B72-8235-749113CB3B9A}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_31" Value="{5BEC4F9D-D8A3-4CCD-8430-EA593D20CC13}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_32" Value="{4F2AD27C-C01D-46BF-93FF-1826EFD3816F}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_33" Value="{6FC761D1-DF85-494C-8F9E-5296E268C7F8}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_34" Value="{766E525E-6E3D-4867-8552-C8ED18A7C6FF}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_35" Value="{C78187A6-D108-4928-AD0A-6B98DA5A6D17}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_36" Value="{A81188C4-5327-4151-BF9E-5FABB5E52F59}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_37" Value="{C8EB8BA1-A581-4A18-BF5D-2DB09B117205}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_38" Value="{D4B236CD-409F-4845-AEF1-115D5CBE2D96}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_39" Value="{2C565B65-70F7-4DD3-A622-64951880E2CA}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_4" Value="{FF8B0D42-099B-447C-9226-90A58740B260}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_40" Value="{785845C3-646A-4741-B5D8-428A38562170}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_41" Value="{8421EE74-BBEB-4A73-95ED-3F5F563D651D}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_42" Value="{4F1D37E8-8FC5-40E5-A00E-80383FB1AB02}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_43" Value="{CC48DB44-779F-4CCB-9E86-32331AD195F6}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_44" Value="{F1A8F5AF-3632-4F12-B5C0-E8AC8B2A0D03}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_45" Value="{C000C796-0A06-46D1-A45F-1B8BBAB48DD0}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_46" Value="{5612DC60-5F84-4FB1-AC99-F1007324B02D}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_47" Value="{753EE22A-B284-4931-B6FA-0BF452BFD63E}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_48" Value="{55245F0C-2926-4883-819E-5653D21FB54E}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_49" Value="{600CC014-BB3F-4927-97C5-C0360F8974C7}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_5" Value="{9D26505B-39F1-4D13-8E23-C47E701F10F0}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_50" Value="{DBD6E204-FBDE-4C02-A635-B028DFAC1365}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_51" Value="{35A26F8F-AA88-4816-86C0-9FE7D9D1441D}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_52" Value="{56596328-E148-4CAB-9800-30AE39F37A5A}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_53" Value="{D5A61780-D8D8-4160-BB1A-3E2FCCCDC2D2}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_54" Value="{A73EFCBE-BFFE-444D-808E-9FCA64EF53E7}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_55" Value="{83E4CB1C-38D1-400E-B725-03DEC2F27E3F}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_56" Value="{66CCC38F-ED89-4D45-8CF3-3B2C000C6067}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_57" Value="{CEE266D5-8491-4932-A496-EBF6A9DFA36E}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_58" Value="{877967B3-D6B6-489C-8F75-D77047E2E400}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_59" Value="{43B086D8-ADFD-4B71-89E1-C6F929934AB3}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_6" Value="{71A8126E-F4AE-4EC9-841C-FE2C220A0EF1}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_60" Value="{DC4F3A8B-8456-4D69-8257-230D4B3AF9FB}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_61" Value="{0398A442-E4D8-4B14-B349-B40475CE5EA2}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_62" Value="{C6FFA6F4-C09B-4CCE-8591-A4E9DC23C4AE}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_63" Value="{B4553693-E9D3-429D-A00D-1A2B24B21786}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_64" Value="{96E5B04E-F94B-4158-BA62-190BBBE272DF}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_65" Value="{AE7781C1-46B8-40BA-812F-34CE0E60018E}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_66" Value="{50AA587C-59B6-4947-BB2E-067AAA51E594}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_67" Value="{117AE1C1-8B62-4F9E-AAD8-385EA9D8DC11}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_68" Value="{54CB4768-AD51-4EEB-8311-7FAF8F743B3C}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_69" Value="{44C1800C-4972-4832-982B-B3279000F8E6}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_7" Value="{3823164D-3F77-4E83-8392-DB2D69B9AEF4}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_70" Value="{9D0AEC0B-0F16-4A04-A87F-BF01A01EECAA}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_71" Value="{4C2BA060-945B-4FB8-84CF-C11222E24CEC}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_72" Value="{DFF531AD-BEAA-4FB7-AD41-2D9C5B2E3340}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_73" Value="{6B7AFF17-EBE9-48C7-837A-DAAE4FB071E7}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_74" Value="{A9466C64-4F2A-4B9F-BB78-54AD4A8F584B}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_75" Value="{59BCF3B4-C2D6-4605-B5E8-2FABE86D7BB2}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_76" Value="{8A26D1B8-88CA-413D-A082-C8FD40041D64}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_77" Value="{03A7977A-9B84-4A1F-908D-6B1594439F0F}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_78" Value="{7FA9FD8D-F7C7-4688-9398-B5422FE78C40}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_79" Value="{5B528EA0-2A7E-40E6-9CF5-5FF0AAE262FF}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_8" Value="{F576BCFC-5554-4544-BF5F-5160358AC4DB}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_80" Value="{4B0DEBCF-7C13-4808-8D15-9A0B04A37774}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_81" Value="{A563A2A5-9A97-4B15-8544-B44E87D2C2A4}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_82" Value="{DFD2469E-C51C-42AD-92B6-23FABDF8B941}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_83" Value="{3952E0EC-985E-484D-9406-75F5AB628764}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_84" Value="{2A383EA8-BEC2-479B-8D69-C358B992C616}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_85" Value="{95B95D67-39FC-41C2-B9C6-69F4B10CA64E}"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_9" Value="{9FABB6BD-F7AB-4AD8-9893-EEC0EB202F46}"/>
+    <ROW Component="Microsoft.ui.xaml.resources.19h1.dll" Value="{B0B69A44-B672-4193-BA53-10AB4E92EA5B}"/>
+    <ROW Component="Microsoft.ui.xaml.resources.common.dll" Value="{AAAC2B20-DBAA-4E84-9B25-FDEE16DC9ED0}"/>
+    <ROW Component="ProductInformation" Value="{E3C1C442-95F3-43D1-A92D-57D6213EFAC6}"/>
+    <ROW Component="PushNotificationsLongRunningTask.ProxyStub.dll" Value="{9B288A52-7877-4EA8-A85A-80FE13A350C4}"/>
+    <ROW Component="RestartAgent.exe" Value="{C8DE7477-A45D-4E9D-87C4-34047B4D6A66}"/>
+    <ROW Component="SHORTCUTDIR"/>
+    <ROW Component="SuiteInstaller.exe" Value="{38362FB8-F96B-4F8F-879F-89DAE3FBA2A0}"/>
+    <ROW Component="WinUIEdit.dll" Value="{4077042C-E5E8-42A4-8EC0-70AE319764E9}"/>
+    <ROW Component="WindowsAppSdk.AppxDeploymentExtens_1_ions.Desktop.dll" Value="{AB90D3FD-66DD-4536-91D4-20DB573C89DF}"/>
+    <ROW Component="WindowsAppSdk.AppxDeploymentExtensions.DesktopEventLogInstrumentation.dl" Value="{8AE7FD3D-5B32-4269-953A-DA6C4F43321D}"/>
+    <ROW Component="dcompi.dll" Value="{101D264E-88DE-4D13-BCE8-256DAE36F2FA}"/>
+    <ROW Component="dwmcorei.dll" Value="{F570D0DF-0220-4405-8558-36EA8EEB3334}"/>
+    <ROW Component="map.html" Value="{D5058B90-C294-4E81-A3E4-BD1DA3F3F6B0}"/>
+    <ROW Component="marshal.dll" Value="{7320DA94-B63D-4974-AE19-B6F481F6C73F}"/>
+    <ROW Component="wuceffectsi.dll" Value="{EFFE1144-4B4C-43CC-BBE1-ACCE04AF020B}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_INSTALLED_PREREQS" ComponentId="{2889E3ED-2DB8-4E3F-AC0F-AE9E743C462F}" Directory_="APPDIR" Attributes="4" KeyPath="AI_INSTALLED_PREREQS" Options="1"/>
+    <ROW Component="APPDIR" ComponentId="{6AB1F111-EAD2-4F2F-ADF0-422E854B5626}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="App.xbf" ComponentId="{8A0B4F28-749A-46DF-9DE8-416F1763C6B6}" Directory_="SuiteInstaller_Dir" Attributes="0" KeyPath="App.xbf" Type="0"/>
+    <ROW Component="CoreMessagingXP.dll" ComponentId="{AE385405-3A44-4241-B3D3-FFD763D40AF3}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="CoreMessagingXP.dll"/>
+    <ROW Component="DWriteCore.dll" ComponentId="{5E5514A6-4C81-44AD-A1B3-ECA6C8442861}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="DWriteCore.dll"/>
+    <ROW Component="DwmSceneI.dll" ComponentId="{F092F0F2-70EB-494A-96E6-810F6E47CA34}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="DwmSceneI.dll"/>
+    <ROW Component="ExternalUi.exe" ComponentId="{0CD6A36D-DBC9-4327-B2A3-11FF61156F94}" Directory_="SuiteInstaller_Dir" Attributes="0" KeyPath="ExternalUi.exe"/>
+    <ROW Component="Generic.xbf" ComponentId="{89371557-22C0-44A4-8330-5A68CAEE0F1F}" Directory_="themes_Dir" Attributes="0" KeyPath="Generic.xbf" Type="0"/>
+    <ROW Component="MRM.dll" ComponentId="{8D2F8F1A-D423-43FC-BBCC-6B3AEC12249C}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="MRM.dll"/>
+    <ROW Component="Microsoft.DirectManipulation.dll" ComponentId="{1BCB0D67-1370-4712-A140-AFEBA5F9922B}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.DirectManipulation.dll"/>
+    <ROW Component="Microsoft.Graphics.Display.dll" ComponentId="{0287F558-E5B3-4B1B-9D3D-8E289FD730DC}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.Graphics.Display.dll"/>
+    <ROW Component="Microsoft.InputStateManager.dll" ComponentId="{0FEA88E2-CC1E-4BBA-BAF9-8CBD5A531586}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.InputStateManager.dll"/>
+    <ROW Component="Microsoft.Internal.FrameworkUdk.dll" ComponentId="{9DBE51C0-283E-4F8D-BE46-8A43B8929204}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.Internal.FrameworkUdk.dll"/>
+    <ROW Component="Microsoft.UI.Composition.OSSupport.dll" ComponentId="{7180D9E7-2653-4AFD-92CE-0B938C593383}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.Composition.OSSupport.dll"/>
+    <ROW Component="Microsoft.UI.Input.dll" ComponentId="{C2EE8F45-2DB4-4D01-A7D4-9EE329EA7521}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.Input.dll"/>
+    <ROW Component="Microsoft.UI.Windowing.Core.dll" ComponentId="{B44D265B-8990-4F28-9D1E-A149DB5DD556}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.Windowing.Core.dll"/>
+    <ROW Component="Microsoft.UI.Windowing.dll" ComponentId="{FF2152BE-53B9-47A5-AA75-060DCCD213F3}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.Windowing.dll"/>
+    <ROW Component="Microsoft.UI.Xaml.Controls.dll" ComponentId="{8CE686FD-70AB-4661-BD0D-B46E3A5A5BE2}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.Xaml.Controls.dll"/>
+    <ROW Component="Microsoft.UI.Xaml.Internal.dll" ComponentId="{F270900D-44C0-47BE-A505-20220AAA2A64}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.Xaml.Internal.dll"/>
+    <ROW Component="Microsoft.UI.Xaml.Phone.dll" ComponentId="{AA12CFAD-ADC9-4131-B5E1-4E9CD46F8423}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.Xaml.Phone.dll"/>
+    <ROW Component="Microsoft.UI.dll" ComponentId="{015A4E22-C8BF-424A-95C1-BDFE786EE359}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.UI.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.Core.dll" ComponentId="{35A3F01B-806C-4749-8C3C-0EBC68712346}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.Web.WebView2.Core.dll"/>
+    <ROW Component="Microsoft.Windows.ApplicationModel.Resources.dll" ComponentId="{5441C273-0675-4578-9FA6-A32934FC828A}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.Windows.ApplicationModel.Resources.dll"/>
+    <ROW Component="Microsoft.Windows.Widgets.dll" ComponentId="{759B806D-7CE6-4D9C-9B4B-C1EC5166EEFB}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.Windows.Widgets.dll"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.Bootstrap.dll" ComponentId="{01FAFB3A-9636-4CC0-91FA-9DAD34B3BDBA}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.WindowsAppRuntime.Bootstrap.dll"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.Insights.Resource.dll" ComponentId="{0220E4D9-1A87-446A-A6F6-4793E1FE308C}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.WindowsAppRuntime.Insights.Resource.dll"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.dll" ComponentId="{B9AFFB50-6312-4A1A-B18E-2C01B6BAF035}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW Component="Microsoft.ui.xaml.dll" ComponentId="{3AD21638-03EE-4471-B780-01F5CD235A21}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.ui.xaml.dll"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui" ComponentId="{0129A10B-20B2-4760-8886-AF8521B507A2}" Directory_="afZA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_1" ComponentId="{1B7079B8-20CF-4E72-BB65-C5CC84B8E283}" Directory_="amET_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_1" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_10" ComponentId="{BAAD1F89-EB42-4221-80C8-96F2F7CB4230}" Directory_="csCZ_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_10" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_11" ComponentId="{8964CE19-4F03-4230-8177-560E491A02D7}" Directory_="cyGB_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_11" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_12" ComponentId="{353BAA4A-E857-46D8-AD2B-FFAC0FA95316}" Directory_="daDK_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_12" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_13" ComponentId="{6C3D3007-2D87-4C5E-AA56-8EB7660FACDB}" Directory_="deDE_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_13" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_14" ComponentId="{1C1836E0-44AA-46D7-BBC6-7AA36B4C41E7}" Directory_="elGR_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_14" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_15" ComponentId="{B80E493E-6D51-481B-AEBA-D2E3D711AA00}" Directory_="enGB_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_15" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_16" ComponentId="{E963083B-6AAD-4A33-B1A1-41B78E977F65}" Directory_="enus_Dir" Attributes="256" KeyPath="Microsoft.ui.xaml.dll.mui_16" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_17" ComponentId="{803A06DC-1A56-4F48-9FF6-0D0E8A9B1283}" Directory_="esES_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_17" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_18" ComponentId="{9900BB9E-588C-4399-AFE1-20360565C627}" Directory_="esMX_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_18" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_19" ComponentId="{A0C83A57-452A-412B-8854-F7208600A4C5}" Directory_="etEE_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_19" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_2" ComponentId="{EA3FBE0B-5E43-4818-9415-E0EDECEDB70B}" Directory_="arSA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_2" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_20" ComponentId="{F723CC20-869B-4CE5-8C90-788ADB67AEF7}" Directory_="euES_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_20" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_21" ComponentId="{4DDE91E9-A36A-4AA2-90F4-5E81A807C93D}" Directory_="faIR_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_21" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_22" ComponentId="{BBCFDF57-9A6D-400A-9FCD-AFECB78FC93B}" Directory_="fiFI_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_22" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_23" ComponentId="{B0B4C3B7-B9FA-42C6-A990-0DC49975A5BE}" Directory_="filPH_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_23" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_24" ComponentId="{76F9C73F-00A8-4AA9-95CA-E5C33495DD3E}" Directory_="frCA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_24" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_25" ComponentId="{F4464436-97B7-4CC6-A6B0-4242E6AE5240}" Directory_="frFR_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_25" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_26" ComponentId="{0EC3D8D5-C04D-4FA0-B81A-55C7F8903555}" Directory_="gaIE_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_26" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_27" ComponentId="{78118346-C5E1-4AC2-86A6-5BCC5C1F5466}" Directory_="gdgb_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_27" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_28" ComponentId="{36B38E4C-059A-4573-85E7-95DD8733916B}" Directory_="glES_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_28" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_29" ComponentId="{BF9F3063-4F48-4975-BAC2-97FDD0DD881B}" Directory_="guIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_29" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_3" ComponentId="{D24123E5-0796-4C0D-8460-DB88E01C507F}" Directory_="asIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_3" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_30" ComponentId="{A8BA5857-D345-4B72-8235-749113CB3B9A}" Directory_="heIL_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_30" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_31" ComponentId="{5BEC4F9D-D8A3-4CCD-8430-EA593D20CC13}" Directory_="hiIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_31" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_32" ComponentId="{4F2AD27C-C01D-46BF-93FF-1826EFD3816F}" Directory_="hrHR_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_32" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_33" ComponentId="{6FC761D1-DF85-494C-8F9E-5296E268C7F8}" Directory_="huHU_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_33" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_34" ComponentId="{766E525E-6E3D-4867-8552-C8ED18A7C6FF}" Directory_="hyAM_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_34" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_35" ComponentId="{C78187A6-D108-4928-AD0A-6B98DA5A6D17}" Directory_="idID_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_35" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_36" ComponentId="{A81188C4-5327-4151-BF9E-5FABB5E52F59}" Directory_="isIS_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_36" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_37" ComponentId="{C8EB8BA1-A581-4A18-BF5D-2DB09B117205}" Directory_="itIT_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_37" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_38" ComponentId="{D4B236CD-409F-4845-AEF1-115D5CBE2D96}" Directory_="jaJP_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_38" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_39" ComponentId="{2C565B65-70F7-4DD3-A622-64951880E2CA}" Directory_="kaGE_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_39" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_4" ComponentId="{FF8B0D42-099B-447C-9226-90A58740B260}" Directory_="azLatnAZ_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_4" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_40" ComponentId="{785845C3-646A-4741-B5D8-428A38562170}" Directory_="kkKZ_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_40" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_41" ComponentId="{8421EE74-BBEB-4A73-95ED-3F5F563D651D}" Directory_="kmKH_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_41" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_42" ComponentId="{4F1D37E8-8FC5-40E5-A00E-80383FB1AB02}" Directory_="knIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_42" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_43" ComponentId="{CC48DB44-779F-4CCB-9E86-32331AD195F6}" Directory_="koKR_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_43" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_44" ComponentId="{F1A8F5AF-3632-4F12-B5C0-E8AC8B2A0D03}" Directory_="kokIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_44" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_45" ComponentId="{C000C796-0A06-46D1-A45F-1B8BBAB48DD0}" Directory_="lbLU_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_45" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_46" ComponentId="{5612DC60-5F84-4FB1-AC99-F1007324B02D}" Directory_="loLA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_46" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_47" ComponentId="{753EE22A-B284-4931-B6FA-0BF452BFD63E}" Directory_="ltLT_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_47" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_48" ComponentId="{55245F0C-2926-4883-819E-5653D21FB54E}" Directory_="lvLV_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_48" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_49" ComponentId="{600CC014-BB3F-4927-97C5-C0360F8974C7}" Directory_="miNZ_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_49" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_5" ComponentId="{9D26505B-39F1-4D13-8E23-C47E701F10F0}" Directory_="bgBG_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_5" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_50" ComponentId="{DBD6E204-FBDE-4C02-A635-B028DFAC1365}" Directory_="mkMK_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_50" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_51" ComponentId="{35A26F8F-AA88-4816-86C0-9FE7D9D1441D}" Directory_="mlIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_51" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_52" ComponentId="{56596328-E148-4CAB-9800-30AE39F37A5A}" Directory_="mrIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_52" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_53" ComponentId="{D5A61780-D8D8-4160-BB1A-3E2FCCCDC2D2}" Directory_="msMY_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_53" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_54" ComponentId="{A73EFCBE-BFFE-444D-808E-9FCA64EF53E7}" Directory_="mtMT_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_54" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_55" ComponentId="{83E4CB1C-38D1-400E-B725-03DEC2F27E3F}" Directory_="nbNO_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_55" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_56" ComponentId="{66CCC38F-ED89-4D45-8CF3-3B2C000C6067}" Directory_="neNP_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_56" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_57" ComponentId="{CEE266D5-8491-4932-A496-EBF6A9DFA36E}" Directory_="nlNL_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_57" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_58" ComponentId="{877967B3-D6B6-489C-8F75-D77047E2E400}" Directory_="nnNO_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_58" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_59" ComponentId="{43B086D8-ADFD-4B71-89E1-C6F929934AB3}" Directory_="orIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_59" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_6" ComponentId="{71A8126E-F4AE-4EC9-841C-FE2C220A0EF1}" Directory_="bnIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_6" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_60" ComponentId="{DC4F3A8B-8456-4D69-8257-230D4B3AF9FB}" Directory_="paIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_60" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_61" ComponentId="{0398A442-E4D8-4B14-B349-B40475CE5EA2}" Directory_="plPL_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_61" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_62" ComponentId="{C6FFA6F4-C09B-4CCE-8591-A4E9DC23C4AE}" Directory_="ptBR_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_62" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_63" ComponentId="{B4553693-E9D3-429D-A00D-1A2B24B21786}" Directory_="ptPT_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_63" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_64" ComponentId="{96E5B04E-F94B-4158-BA62-190BBBE272DF}" Directory_="quzPE_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_64" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_65" ComponentId="{AE7781C1-46B8-40BA-812F-34CE0E60018E}" Directory_="roRO_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_65" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_66" ComponentId="{50AA587C-59B6-4947-BB2E-067AAA51E594}" Directory_="ruRU_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_66" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_67" ComponentId="{117AE1C1-8B62-4F9E-AAD8-385EA9D8DC11}" Directory_="skSK_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_67" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_68" ComponentId="{54CB4768-AD51-4EEB-8311-7FAF8F743B3C}" Directory_="slSI_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_68" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_69" ComponentId="{44C1800C-4972-4832-982B-B3279000F8E6}" Directory_="sqAL_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_69" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_7" ComponentId="{3823164D-3F77-4E83-8392-DB2D69B9AEF4}" Directory_="bsLatnBA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_7" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_70" ComponentId="{9D0AEC0B-0F16-4A04-A87F-BF01A01EECAA}" Directory_="srCyrlBA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_70" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_71" ComponentId="{4C2BA060-945B-4FB8-84CF-C11222E24CEC}" Directory_="srCyrlRS_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_71" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_72" ComponentId="{DFF531AD-BEAA-4FB7-AD41-2D9C5B2E3340}" Directory_="srLatnRS_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_72" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_73" ComponentId="{6B7AFF17-EBE9-48C7-837A-DAAE4FB071E7}" Directory_="svSE_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_73" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_74" ComponentId="{A9466C64-4F2A-4B9F-BB78-54AD4A8F584B}" Directory_="taIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_74" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_75" ComponentId="{59BCF3B4-C2D6-4605-B5E8-2FABE86D7BB2}" Directory_="teIN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_75" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_76" ComponentId="{8A26D1B8-88CA-413D-A082-C8FD40041D64}" Directory_="thTH_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_76" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_77" ComponentId="{03A7977A-9B84-4A1F-908D-6B1594439F0F}" Directory_="trTR_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_77" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_78" ComponentId="{7FA9FD8D-F7C7-4688-9398-B5422FE78C40}" Directory_="ttRU_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_78" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_79" ComponentId="{5B528EA0-2A7E-40E6-9CF5-5FF0AAE262FF}" Directory_="ugCN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_79" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_8" ComponentId="{F576BCFC-5554-4544-BF5F-5160358AC4DB}" Directory_="caES_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_8" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_80" ComponentId="{4B0DEBCF-7C13-4808-8D15-9A0B04A37774}" Directory_="ukUA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_80" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_81" ComponentId="{A563A2A5-9A97-4B15-8544-B44E87D2C2A4}" Directory_="urPK_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_81" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_82" ComponentId="{DFD2469E-C51C-42AD-92B6-23FABDF8B941}" Directory_="uzLatnUZ_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_82" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_83" ComponentId="{3952E0EC-985E-484D-9406-75F5AB628764}" Directory_="viVN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_83" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_84" ComponentId="{2A383EA8-BEC2-479B-8D69-C358B992C616}" Directory_="zhCN_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_84" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_85" ComponentId="{95B95D67-39FC-41C2-B9C6-69F4B10CA64E}" Directory_="zhTW_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_85" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.dll.mui_9" ComponentId="{9FABB6BD-F7AB-4AD8-9893-EEC0EB202F46}" Directory_="caEsVALENCIA_Dir" Attributes="0" KeyPath="Microsoft.ui.xaml.dll.mui_9" Type="0"/>
+    <ROW Component="Microsoft.ui.xaml.resources.19h1.dll" ComponentId="{B0B69A44-B672-4193-BA53-10AB4E92EA5B}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.ui.xaml.resources.19h1.dll"/>
+    <ROW Component="Microsoft.ui.xaml.resources.common.dll" ComponentId="{AAAC2B20-DBAA-4E84-9B25-FDEE16DC9ED0}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="Microsoft.ui.xaml.resources.common.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{E3C1C442-95F3-43D1-A92D-57D6213EFAC6}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="PushNotificationsLongRunningTask.ProxyStub.dll" ComponentId="{9B288A52-7877-4EA8-A85A-80FE13A350C4}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="PushNotificationsLongRunningTask.ProxyStub.dll"/>
+    <ROW Component="RestartAgent.exe" ComponentId="{C8DE7477-A45D-4E9D-87C4-34047B4D6A66}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="RestartAgent.exe"/>
+    <ROW Component="SuiteInstaller.exe" ComponentId="{38362FB8-F96B-4F8F-879F-89DAE3FBA2A0}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="SuiteInstaller.exe"/>
+    <ROW Component="WinUIEdit.dll" ComponentId="{4077042C-E5E8-42A4-8EC0-70AE319764E9}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="WinUIEdit.dll"/>
+    <ROW Component="WindowsAppSdk.AppxDeploymentExtens_1_ions.Desktop.dll" ComponentId="{AB90D3FD-66DD-4536-91D4-20DB573C89DF}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="WindowsAppSdk.AppxDeploymentExtensions.Desktop.dll"/>
+    <ROW Component="WindowsAppSdk.AppxDeploymentExtensions.DesktopEventLogInstrumentation.dl" ComponentId="{8AE7FD3D-5B32-4269-953A-DA6C4F43321D}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="WindowsAppSdk.AppxDeploymentExtensions.DesktopEventLogInstrumentation"/>
+    <ROW Component="advinst.png" ComponentId="{136A8381-BA98-4730-AE41-9D459D162140}" Directory_="assets_1_Dir" Attributes="0" KeyPath="advinst.png" Type="0"/>
+    <ROW Component="dcompi.dll" ComponentId="{101D264E-88DE-4D13-BCE8-256DAE36F2FA}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="dcompi.dll"/>
+    <ROW Component="dwmcorei.dll" ComponentId="{F570D0DF-0220-4405-8558-36EA8EEB3334}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="dwmcorei.dll"/>
+    <ROW Component="map.html" ComponentId="{D5058B90-C294-4E81-A3E4-BD1DA3F3F6B0}" Directory_="assets_Dir" Attributes="0" KeyPath="map.html" Type="0"/>
+    <ROW Component="marshal.dll" ComponentId="{7320DA94-B63D-4974-AE19-B6F481F6C73F}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="marshal.dll"/>
+    <ROW Component="updater.exe" ComponentId="{D046949E-6AF3-4D36-8A05-46191BFAE026}" Directory_="APPDIR" Attributes="0" KeyPath="updater.exe"/>
+    <ROW Component="wuceffectsi.dll" ComponentId="{EFFE1144-4B4C-43CC-BBE1-ACCE04AF020B}" Directory_="SuiteInstaller_Dir" Attributes="256" KeyPath="wuceffectsi.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="Config" Title="Config" Description="Description" Display="3" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ExternalUi.exe" Component_="ExternalUi.exe" FileName="EXTERN~1.EXE|ExternalUi.exe" Attributes="0" SourcePath="&lt;AI_HOME&gt;stubs\x86\ExternalUi.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="SuiteInstaller.exe" Component_="SuiteInstaller.exe" FileName="SUITEI~1.EXE|SuiteInstaller.exe" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\SuiteInstaller.exe" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui" Component_="Microsoft.ui.xaml.dll.mui" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\af-ZA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui" Component_="Microsoft.ui.xaml.dll.mui" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\af-ZA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_1" Component_="Microsoft.ui.xaml.dll.mui_1" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\am-ET\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_1" Component_="Microsoft.ui.xaml.dll.mui_1" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\am-ET\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="App.xbf" Component_="App.xbf" FileName="App.xbf" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\App.xbf" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_2" Component_="Microsoft.ui.xaml.dll.mui_2" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ar-SA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_2" Component_="Microsoft.ui.xaml.dll.mui_2" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ar-SA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_3" Component_="Microsoft.ui.xaml.dll.mui_3" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\as-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_3" Component_="Microsoft.ui.xaml.dll.mui_3" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\as-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_4" Component_="Microsoft.ui.xaml.dll.mui_4" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\az-Latn-AZ\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_4" Component_="Microsoft.ui.xaml.dll.mui_4" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\az-Latn-AZ\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_5" Component_="Microsoft.ui.xaml.dll.mui_5" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\bg-BG\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_5" Component_="Microsoft.ui.xaml.dll.mui_5" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\bg-BG\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_6" Component_="Microsoft.ui.xaml.dll.mui_6" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\bn-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_6" Component_="Microsoft.ui.xaml.dll.mui_6" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\bn-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_7" Component_="Microsoft.ui.xaml.dll.mui_7" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\bs-Latn-BA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_7" Component_="Microsoft.ui.xaml.dll.mui_7" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\bs-Latn-BA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_8" Component_="Microsoft.ui.xaml.dll.mui_8" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ca-ES\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_8" Component_="Microsoft.ui.xaml.dll.mui_8" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ca-ES\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_9" Component_="Microsoft.ui.xaml.dll.mui_9" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ca-Es-VALENCIA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_9" Component_="Microsoft.ui.xaml.dll.mui_9" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ca-Es-VALENCIA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="CoreMessagingXP.dll" Component_="CoreMessagingXP.dll" FileName="COREME~1.DLL|CoreMessagingXP.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\CoreMessagingXP.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_10" Component_="Microsoft.ui.xaml.dll.mui_10" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\cs-CZ\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_10" Component_="Microsoft.ui.xaml.dll.mui_10" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\cs-CZ\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_11" Component_="Microsoft.ui.xaml.dll.mui_11" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\cy-GB\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_11" Component_="Microsoft.ui.xaml.dll.mui_11" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\cy-GB\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_12" Component_="Microsoft.ui.xaml.dll.mui_12" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\da-DK\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_12" Component_="Microsoft.ui.xaml.dll.mui_12" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\da-DK\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="dcompi.dll" Component_="dcompi.dll" FileName="dcompi.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\dcompi.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_13" Component_="Microsoft.ui.xaml.dll.mui_13" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\de-DE\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_13" Component_="Microsoft.ui.xaml.dll.mui_13" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\de-DE\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="dwmcorei.dll" Component_="dwmcorei.dll" FileName="dwmcorei.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\dwmcorei.dll" SelfReg="false"/>
+    <ROW File="DwmSceneI.dll" Component_="DwmSceneI.dll" FileName="DWMSCE~1.DLL|DwmSceneI.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\DwmSceneI.dll" SelfReg="false"/>
+    <ROW File="DWriteCore.dll" Component_="DWriteCore.dll" FileName="DWRITE~1.DLL|DWriteCore.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\DWriteCore.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_14" Component_="Microsoft.ui.xaml.dll.mui_14" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\el-GR\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_14" Component_="Microsoft.ui.xaml.dll.mui_14" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\el-GR\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_15" Component_="Microsoft.ui.xaml.dll.mui_15" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\en-GB\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_15" Component_="Microsoft.ui.xaml.dll.mui_15" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\en-GB\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_16" Component_="Microsoft.ui.xaml.dll.mui_16" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\en-us\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_16" Component_="Microsoft.ui.xaml.dll.mui_16" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\en-us\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_17" Component_="Microsoft.ui.xaml.dll.mui_17" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\es-ES\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_17" Component_="Microsoft.ui.xaml.dll.mui_17" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\es-ES\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_18" Component_="Microsoft.ui.xaml.dll.mui_18" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\es-MX\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_18" Component_="Microsoft.ui.xaml.dll.mui_18" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\es-MX\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_19" Component_="Microsoft.ui.xaml.dll.mui_19" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\et-EE\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_19" Component_="Microsoft.ui.xaml.dll.mui_19" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\et-EE\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_20" Component_="Microsoft.ui.xaml.dll.mui_20" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\eu-ES\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_20" Component_="Microsoft.ui.xaml.dll.mui_20" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\eu-ES\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_21" Component_="Microsoft.ui.xaml.dll.mui_21" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fa-IR\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_21" Component_="Microsoft.ui.xaml.dll.mui_21" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fa-IR\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_22" Component_="Microsoft.ui.xaml.dll.mui_22" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fi-FI\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_22" Component_="Microsoft.ui.xaml.dll.mui_22" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fi-FI\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_23" Component_="Microsoft.ui.xaml.dll.mui_23" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fil-PH\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_23" Component_="Microsoft.ui.xaml.dll.mui_23" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fil-PH\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_24" Component_="Microsoft.ui.xaml.dll.mui_24" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fr-CA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_24" Component_="Microsoft.ui.xaml.dll.mui_24" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fr-CA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_25" Component_="Microsoft.ui.xaml.dll.mui_25" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fr-FR\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_25" Component_="Microsoft.ui.xaml.dll.mui_25" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\fr-FR\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_26" Component_="Microsoft.ui.xaml.dll.mui_26" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ga-IE\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_26" Component_="Microsoft.ui.xaml.dll.mui_26" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ga-IE\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_27" Component_="Microsoft.ui.xaml.dll.mui_27" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\gd-gb\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_27" Component_="Microsoft.ui.xaml.dll.mui_27" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\gd-gb\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_28" Component_="Microsoft.ui.xaml.dll.mui_28" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\gl-ES\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_28" Component_="Microsoft.ui.xaml.dll.mui_28" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\gl-ES\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_29" Component_="Microsoft.ui.xaml.dll.mui_29" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\gu-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_29" Component_="Microsoft.ui.xaml.dll.mui_29" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\gu-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_30" Component_="Microsoft.ui.xaml.dll.mui_30" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\he-IL\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_30" Component_="Microsoft.ui.xaml.dll.mui_30" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\he-IL\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_31" Component_="Microsoft.ui.xaml.dll.mui_31" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hi-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_31" Component_="Microsoft.ui.xaml.dll.mui_31" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hi-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="HomePage.xbf" Component_="App.xbf" FileName="HomePage.xbf" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\HomePage.xbf" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_32" Component_="Microsoft.ui.xaml.dll.mui_32" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hr-HR\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_32" Component_="Microsoft.ui.xaml.dll.mui_32" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hr-HR\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_33" Component_="Microsoft.ui.xaml.dll.mui_33" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hu-HU\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_33" Component_="Microsoft.ui.xaml.dll.mui_33" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hu-HU\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_34" Component_="Microsoft.ui.xaml.dll.mui_34" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hy-AM\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_34" Component_="Microsoft.ui.xaml.dll.mui_34" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\hy-AM\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_35" Component_="Microsoft.ui.xaml.dll.mui_35" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\id-ID\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_35" Component_="Microsoft.ui.xaml.dll.mui_35" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\id-ID\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_36" Component_="Microsoft.ui.xaml.dll.mui_36" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\is-IS\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_36" Component_="Microsoft.ui.xaml.dll.mui_36" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\is-IS\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_37" Component_="Microsoft.ui.xaml.dll.mui_37" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\it-IT\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_37" Component_="Microsoft.ui.xaml.dll.mui_37" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\it-IT\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_38" Component_="Microsoft.ui.xaml.dll.mui_38" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ja-JP\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_38" Component_="Microsoft.ui.xaml.dll.mui_38" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ja-JP\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_39" Component_="Microsoft.ui.xaml.dll.mui_39" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ka-GE\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_39" Component_="Microsoft.ui.xaml.dll.mui_39" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ka-GE\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_40" Component_="Microsoft.ui.xaml.dll.mui_40" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\kk-KZ\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_40" Component_="Microsoft.ui.xaml.dll.mui_40" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\kk-KZ\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_41" Component_="Microsoft.ui.xaml.dll.mui_41" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\km-KH\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_41" Component_="Microsoft.ui.xaml.dll.mui_41" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\km-KH\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_42" Component_="Microsoft.ui.xaml.dll.mui_42" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\kn-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_42" Component_="Microsoft.ui.xaml.dll.mui_42" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\kn-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_43" Component_="Microsoft.ui.xaml.dll.mui_43" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ko-KR\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_43" Component_="Microsoft.ui.xaml.dll.mui_43" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ko-KR\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_44" Component_="Microsoft.ui.xaml.dll.mui_44" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\kok-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_44" Component_="Microsoft.ui.xaml.dll.mui_44" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\kok-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_45" Component_="Microsoft.ui.xaml.dll.mui_45" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lb-LU\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_45" Component_="Microsoft.ui.xaml.dll.mui_45" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lb-LU\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="LibraryPage.xbf" Component_="App.xbf" FileName="LIBRAR~1.XBF|LibraryPage.xbf" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\LibraryPage.xbf" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_46" Component_="Microsoft.ui.xaml.dll.mui_46" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lo-LA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_46" Component_="Microsoft.ui.xaml.dll.mui_46" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lo-LA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_47" Component_="Microsoft.ui.xaml.dll.mui_47" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lt-LT\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_47" Component_="Microsoft.ui.xaml.dll.mui_47" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lt-LT\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_48" Component_="Microsoft.ui.xaml.dll.mui_48" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lv-LV\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_48" Component_="Microsoft.ui.xaml.dll.mui_48" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\lv-LV\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="MainWindow.xbf" Component_="App.xbf" FileName="MAINWI~1.XBF|MainWindow.xbf" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\MainWindow.xbf" SelfReg="false"/>
+    <ROW File="marshal.dll" Component_="marshal.dll" FileName="marshal.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\marshal.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_49" Component_="Microsoft.ui.xaml.dll.mui_49" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mi-NZ\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_49" Component_="Microsoft.ui.xaml.dll.mui_49" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mi-NZ\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.DirectManipulation.dll" Component_="Microsoft.DirectManipulation.dll" FileName="MICROS~1.DLL|Microsoft.DirectManipulation.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.DirectManipulation.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Foundation.winmd" Component_="App.xbf" FileName="MICROS~1.WIN|Microsoft.Foundation.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Foundation.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Graphics.Display.dll" Component_="Microsoft.Graphics.Display.dll" FileName="MICROS~2.DLL|Microsoft.Graphics.Display.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Graphics.Display.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Graphics.winmd" Component_="App.xbf" FileName="MICROS~2.WIN|Microsoft.Graphics.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Graphics.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.InputStateManager.dll" Component_="Microsoft.InputStateManager.dll" FileName="MICROS~3.DLL|Microsoft.InputStateManager.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.InputStateManager.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Internal.FrameworkUdk.dll" Component_="Microsoft.Internal.FrameworkUdk.dll" FileName="MICROS~4.DLL|Microsoft.Internal.FrameworkUdk.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Internal.FrameworkUdk.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Composition.OSSupport.dll" Component_="Microsoft.UI.Composition.OSSupport.dll" FileName="MICROS~5.DLL|Microsoft.UI.Composition.OSSupport.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Composition.OSSupport.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.dll" Component_="Microsoft.UI.dll" FileName="MICROS~6.DLL|Microsoft.UI.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Input.dll" Component_="Microsoft.UI.Input.dll" FileName="MICROS~7.DLL|Microsoft.UI.Input.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Input.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Text.winmd" Component_="App.xbf" FileName="MICROS~3.WIN|Microsoft.UI.Text.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Text.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Windowing.Core.dll" Component_="Microsoft.UI.Windowing.Core.dll" FileName="MICROS~8.DLL|Microsoft.UI.Windowing.Core.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Windowing.Core.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Windowing.dll" Component_="Microsoft.UI.Windowing.dll" FileName="MICROS~9.DLL|Microsoft.UI.Windowing.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Windowing.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.winmd" Component_="App.xbf" FileName="MICROS~4.WIN|Microsoft.UI.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.winmd" SelfReg="false"/>
+    <ROW File="map.html" Component_="map.html" FileName="MAP~1.HTM|map.html" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Xaml\Assets\map.html" SelfReg="false"/>
+    <ROW File="NoiseAsset_256x256_PNG.png" Component_="map.html" FileName="NOISEA~1.PNG|NoiseAsset_256x256_PNG.png" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Xaml\Assets\NoiseAsset_256x256_PNG.png" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Controls.dll" Component_="Microsoft.UI.Xaml.Controls.dll" FileName="MICRO~10.DLL|Microsoft.UI.Xaml.Controls.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Xaml.Controls.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Controls.pri" Component_="App.xbf" FileName="MICROS~1.PRI|Microsoft.UI.Xaml.Controls.pri" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Xaml.Controls.pri" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll" Component_="Microsoft.ui.xaml.dll" FileName="MICRO~11.DLL|Microsoft.ui.xaml.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.ui.xaml.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Internal.dll" Component_="Microsoft.UI.Xaml.Internal.dll" FileName="MICRO~12.DLL|Microsoft.UI.Xaml.Internal.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Xaml.Internal.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll" Component_="Microsoft.UI.Xaml.Phone.dll" FileName="MICRO~13.DLL|Microsoft.UI.Xaml.Phone.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Xaml.Phone.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.resources.19h1.dll" Component_="Microsoft.ui.xaml.resources.19h1.dll" FileName="MICRO~14.DLL|Microsoft.ui.xaml.resources.19h1.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.ui.xaml.resources.19h1.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.resources.common.dll" Component_="Microsoft.ui.xaml.resources.common.dll" FileName="MICRO~15.DLL|Microsoft.ui.xaml.resources.common.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.ui.xaml.resources.common.dll" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.winmd" Component_="App.xbf" FileName="MICROS~5.WIN|Microsoft.UI.Xaml.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.UI.Xaml.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.dll" Component_="Microsoft.Web.WebView2.Core.dll" FileName="MICRO~16.DLL|Microsoft.Web.WebView2.Core.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Web.WebView2.Core.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.winmd" Component_="App.xbf" FileName="MICROS~6.WIN|Microsoft.Web.WebView2.Core.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Web.WebView2.Core.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.ApplicationModel.DynamicDependency.winmd" Component_="App.xbf" FileName="MICROS~7.WIN|Microsoft.Windows.ApplicationModel.DynamicDependency.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.ApplicationModel.DynamicDependency.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.ApplicationModel.Resources.dll" Component_="Microsoft.Windows.ApplicationModel.Resources.dll" FileName="MICRO~17.DLL|Microsoft.Windows.ApplicationModel.Resources.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.ApplicationModel.Resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.ApplicationModel.Resources.winmd" Component_="App.xbf" FileName="MICROS~8.WIN|Microsoft.Windows.ApplicationModel.Resources.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.ApplicationModel.Resources.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.ApplicationModel.WindowsAppRuntime.winmd" Component_="App.xbf" FileName="MICROS~9.WIN|Microsoft.Windows.ApplicationModel.WindowsAppRuntime.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.AppLifecycle.winmd" Component_="App.xbf" FileName="MICRO~10.WIN|Microsoft.Windows.AppLifecycle.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.AppLifecycle.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.AppNotifications.Builder.winmd" Component_="App.xbf" FileName="MICRO~11.WIN|Microsoft.Windows.AppNotifications.Builder.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.AppNotifications.Builder.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.AppNotifications.winmd" Component_="App.xbf" FileName="MICRO~12.WIN|Microsoft.Windows.AppNotifications.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.AppNotifications.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.Management.Deployment.winmd" Component_="App.xbf" FileName="MICRO~13.WIN|Microsoft.Windows.Management.Deployment.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.Management.Deployment.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.PushNotifications.winmd" Component_="App.xbf" FileName="MICRO~14.WIN|Microsoft.Windows.PushNotifications.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.PushNotifications.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.Security.AccessControl.winmd" Component_="App.xbf" FileName="MICRO~15.WIN|Microsoft.Windows.Security.AccessControl.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.Security.AccessControl.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.System.Power.winmd" Component_="App.xbf" FileName="MICRO~16.WIN|Microsoft.Windows.System.Power.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.System.Power.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.System.winmd" Component_="App.xbf" FileName="MICRO~17.WIN|Microsoft.Windows.System.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.System.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.Widgets.dll" Component_="Microsoft.Windows.Widgets.dll" FileName="MICRO~18.DLL|Microsoft.Windows.Widgets.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.Widgets.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.Widgets.winmd" Component_="App.xbf" FileName="MICRO~18.WIN|Microsoft.Windows.Widgets.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.Windows.Widgets.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.WindowsAppRuntime.Bootstrap.dll" Component_="Microsoft.WindowsAppRuntime.Bootstrap.dll" FileName="MICRO~19.DLL|Microsoft.WindowsAppRuntime.Bootstrap.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.WindowsAppRuntime.Bootstrap.dll" SelfReg="false"/>
+    <ROW File="Microsoft.WindowsAppRuntime.dll" Component_="Microsoft.WindowsAppRuntime.dll" FileName="MICRO~20.DLL|Microsoft.WindowsAppRuntime.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.WindowsAppRuntime.dll" SelfReg="false"/>
+    <ROW File="Microsoft.WindowsAppRuntime.Insights.Resource.dll" Component_="Microsoft.WindowsAppRuntime.Insights.Resource.dll" FileName="MICRO~21.DLL|Microsoft.WindowsAppRuntime.Insights.Resource.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\Microsoft.WindowsAppRuntime.Insights.Resource.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_50" Component_="Microsoft.ui.xaml.dll.mui_50" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mk-MK\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_50" Component_="Microsoft.ui.xaml.dll.mui_50" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mk-MK\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_51" Component_="Microsoft.ui.xaml.dll.mui_51" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ml-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_51" Component_="Microsoft.ui.xaml.dll.mui_51" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ml-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_52" Component_="Microsoft.ui.xaml.dll.mui_52" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mr-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_52" Component_="Microsoft.ui.xaml.dll.mui_52" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mr-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="MRM.dll" Component_="MRM.dll" FileName="MRM.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\MRM.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_53" Component_="Microsoft.ui.xaml.dll.mui_53" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ms-MY\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_53" Component_="Microsoft.ui.xaml.dll.mui_53" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ms-MY\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_54" Component_="Microsoft.ui.xaml.dll.mui_54" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mt-MT\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_54" Component_="Microsoft.ui.xaml.dll.mui_54" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\mt-MT\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_55" Component_="Microsoft.ui.xaml.dll.mui_55" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\nb-NO\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_55" Component_="Microsoft.ui.xaml.dll.mui_55" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\nb-NO\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_56" Component_="Microsoft.ui.xaml.dll.mui_56" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ne-NP\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_56" Component_="Microsoft.ui.xaml.dll.mui_56" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ne-NP\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_57" Component_="Microsoft.ui.xaml.dll.mui_57" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\nl-NL\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_57" Component_="Microsoft.ui.xaml.dll.mui_57" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\nl-NL\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_58" Component_="Microsoft.ui.xaml.dll.mui_58" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\nn-NO\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_58" Component_="Microsoft.ui.xaml.dll.mui_58" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\nn-NO\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_59" Component_="Microsoft.ui.xaml.dll.mui_59" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\or-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_59" Component_="Microsoft.ui.xaml.dll.mui_59" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\or-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_60" Component_="Microsoft.ui.xaml.dll.mui_60" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pa-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_60" Component_="Microsoft.ui.xaml.dll.mui_60" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pa-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_61" Component_="Microsoft.ui.xaml.dll.mui_61" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pl-PL\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_61" Component_="Microsoft.ui.xaml.dll.mui_61" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pl-PL\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="PrerequisitePage.xbf" Component_="App.xbf" FileName="PREREQ~1.XBF|PrerequisitePage.xbf" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\PrerequisitePage.xbf" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_62" Component_="Microsoft.ui.xaml.dll.mui_62" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pt-BR\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_62" Component_="Microsoft.ui.xaml.dll.mui_62" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pt-BR\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_63" Component_="Microsoft.ui.xaml.dll.mui_63" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pt-PT\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_63" Component_="Microsoft.ui.xaml.dll.mui_63" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\pt-PT\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="PushNotificationsLongRunningTask.ProxyStub.dll" Component_="PushNotificationsLongRunningTask.ProxyStub.dll" FileName="PUSHNO~1.DLL|PushNotificationsLongRunningTask.ProxyStub.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\PushNotificationsLongRunningTask.ProxyStub.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_64" Component_="Microsoft.ui.xaml.dll.mui_64" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\quz-PE\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_64" Component_="Microsoft.ui.xaml.dll.mui_64" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\quz-PE\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="resources.pri" Component_="App.xbf" FileName="RESOUR~1.PRI|resources.pri" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\resources.pri" SelfReg="false"/>
+    <ROW File="RestartAgent.exe" Component_="RestartAgent.exe" FileName="RESTAR~1.EXE|RestartAgent.exe" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\RestartAgent.exe" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_65" Component_="Microsoft.ui.xaml.dll.mui_65" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ro-RO\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_65" Component_="Microsoft.ui.xaml.dll.mui_65" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ro-RO\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_66" Component_="Microsoft.ui.xaml.dll.mui_66" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ru-RU\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_66" Component_="Microsoft.ui.xaml.dll.mui_66" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ru-RU\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_67" Component_="Microsoft.ui.xaml.dll.mui_67" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sk-SK\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_67" Component_="Microsoft.ui.xaml.dll.mui_67" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sk-SK\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_68" Component_="Microsoft.ui.xaml.dll.mui_68" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sl-SI\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_68" Component_="Microsoft.ui.xaml.dll.mui_68" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sl-SI\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_69" Component_="Microsoft.ui.xaml.dll.mui_69" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sq-AL\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_69" Component_="Microsoft.ui.xaml.dll.mui_69" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sq-AL\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_70" Component_="Microsoft.ui.xaml.dll.mui_70" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sr-Cyrl-BA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_70" Component_="Microsoft.ui.xaml.dll.mui_70" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sr-Cyrl-BA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_71" Component_="Microsoft.ui.xaml.dll.mui_71" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sr-Cyrl-RS\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_71" Component_="Microsoft.ui.xaml.dll.mui_71" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sr-Cyrl-RS\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_72" Component_="Microsoft.ui.xaml.dll.mui_72" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sr-Latn-RS\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_72" Component_="Microsoft.ui.xaml.dll.mui_72" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sr-Latn-RS\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="SuiteInstaller.exp" Component_="App.xbf" FileName="SUITEI~1.EXP|SuiteInstaller.exp" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\SuiteInstaller.exp" SelfReg="false"/>
+    <ROW File="SuiteInstaller.lib" Component_="App.xbf" FileName="SUITEI~1.LIB|SuiteInstaller.lib" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\SuiteInstaller.lib" SelfReg="false"/>
+    <ROW File="SuiteInstaller.winmd" Component_="App.xbf" FileName="SUITEI~1.WIN|SuiteInstaller.winmd" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\SuiteInstaller.winmd" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_73" Component_="Microsoft.ui.xaml.dll.mui_73" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sv-SE\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_73" Component_="Microsoft.ui.xaml.dll.mui_73" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\sv-SE\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_74" Component_="Microsoft.ui.xaml.dll.mui_74" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ta-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_74" Component_="Microsoft.ui.xaml.dll.mui_74" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ta-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_75" Component_="Microsoft.ui.xaml.dll.mui_75" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\te-IN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_75" Component_="Microsoft.ui.xaml.dll.mui_75" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\te-IN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_76" Component_="Microsoft.ui.xaml.dll.mui_76" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\th-TH\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_76" Component_="Microsoft.ui.xaml.dll.mui_76" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\th-TH\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Generic.xbf" Component_="Generic.xbf" FileName="Generic.xbf" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\themes\Generic.xbf" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_77" Component_="Microsoft.ui.xaml.dll.mui_77" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\tr-TR\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_77" Component_="Microsoft.ui.xaml.dll.mui_77" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\tr-TR\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_78" Component_="Microsoft.ui.xaml.dll.mui_78" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\tt-RU\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_78" Component_="Microsoft.ui.xaml.dll.mui_78" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\tt-RU\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_79" Component_="Microsoft.ui.xaml.dll.mui_79" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ug-CN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_79" Component_="Microsoft.ui.xaml.dll.mui_79" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ug-CN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_80" Component_="Microsoft.ui.xaml.dll.mui_80" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\uk-UA\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_80" Component_="Microsoft.ui.xaml.dll.mui_80" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\uk-UA\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_81" Component_="Microsoft.ui.xaml.dll.mui_81" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ur-PK\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_81" Component_="Microsoft.ui.xaml.dll.mui_81" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\ur-PK\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_82" Component_="Microsoft.ui.xaml.dll.mui_82" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\uz-Latn-UZ\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_82" Component_="Microsoft.ui.xaml.dll.mui_82" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\uz-Latn-UZ\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_83" Component_="Microsoft.ui.xaml.dll.mui_83" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\vi-VN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_83" Component_="Microsoft.ui.xaml.dll.mui_83" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\vi-VN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="WindowsAppRuntime.png" Component_="App.xbf" FileName="WINDOW~1.PNG|WindowsAppRuntime.png" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\WindowsAppRuntime.png" SelfReg="false"/>
+    <ROW File="WindowsAppSdk.AppxDeploymentExtensions.DesktopEventLogInstrumentation" Component_="WindowsAppSdk.AppxDeploymentExtensions.DesktopEventLogInstrumentation.dl" FileName="WINDOW~1.DLL|WindowsAppSdk.AppxDeploymentExtensions.Desktop-EventLog-Instrumentation.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\WindowsAppSdk.AppxDeploymentExtensions.Desktop-EventLog-Instrumentation.dll" SelfReg="false"/>
+    <ROW File="WindowsAppSdk.AppxDeploymentExtensions.Desktop.dll" Component_="WindowsAppSdk.AppxDeploymentExtens_1_ions.Desktop.dll" FileName="WINDOW~2.DLL|WindowsAppSdk.AppxDeploymentExtensions.Desktop.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\WindowsAppSdk.AppxDeploymentExtensions.Desktop.dll" SelfReg="false"/>
+    <ROW File="WinUIEdit.dll" Component_="WinUIEdit.dll" FileName="WINUIE~1.DLL|WinUIEdit.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\WinUIEdit.dll" SelfReg="false"/>
+    <ROW File="wuceffectsi.dll" Component_="wuceffectsi.dll" FileName="WUCEFF~1.DLL|wuceffectsi.dll" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\wuceffectsi.dll" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_84" Component_="Microsoft.ui.xaml.dll.mui_84" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\zh-CN\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_84" Component_="Microsoft.ui.xaml.dll.mui_84" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\zh-CN\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.ui.xaml.dll.mui_85" Component_="Microsoft.ui.xaml.dll.mui_85" FileName="MICROS~1.MUI|Microsoft.ui.xaml.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\zh-TW\Microsoft.ui.xaml.dll.mui" SelfReg="false"/>
+    <ROW File="Microsoft.UI.Xaml.Phone.dll.mui_85" Component_="Microsoft.ui.xaml.dll.mui_85" FileName="MICROS~2.MUI|Microsoft.UI.Xaml.Phone.dll.mui" Attributes="0" SourcePath="&lt;AI_HOME&gt;bin\x64\SuiteInstaller\zh-TW\Microsoft.UI.Xaml.Phone.dll.mui" SelfReg="false"/>
+    <ROW File="advinst.png" Component_="advinst.png" FileName="advinst.png" Attributes="0" SourcePath="Assets\advinst.png" SelfReg="false"/>
+    <ROW File="AdvInstBKG.png" Component_="advinst.png" FileName="ADVINS~1.PNG|AdvInst BKG.png" Attributes="0" SourcePath="Assets\AdvInst BKG.png" SelfReg="false"/>
+    <ROW File="packit.png" Component_="advinst.png" FileName="packit.png" Attributes="0" SourcePath="Assets\packit.png" SelfReg="false"/>
+    <ROW File="PackItBKG.png" Component_="advinst.png" FileName="PACKIT~1.PNG|PackIt BKG.png" Attributes="0" SourcePath="Assets\PackIt BKG.png" SelfReg="false"/>
+    <ROW File="AdvInstDigitalSignature.png" Component_="advinst.png" FileName="_ADVIN~1.PNG|[AdvInst]DigitalSignature.png" Attributes="0" SourcePath="Assets\[AdvInst]DigitalSignature.png" SelfReg="false"/>
+    <ROW File="AdvInstProductDetails.png" Component_="advinst.png" FileName="_ADVIN~2.PNG|[AdvInst]ProductDetails.png" Attributes="0" SourcePath="Assets\[AdvInst]ProductDetails.png" SelfReg="false"/>
+    <ROW File="AdvInstThemes.png" Component_="advinst.png" FileName="_ADVIN~3.PNG|[AdvInst]Themes.png" Attributes="0" SourcePath="Assets\[AdvInst]Themes.png" SelfReg="false"/>
+    <ROW File="PacKitCatalog.png" Component_="advinst.png" FileName="_PACKI~1.PNG|[PacKit]Catalog.png" Attributes="0" SourcePath="Assets\[PacKit]Catalog.png" SelfReg="false"/>
+    <ROW File="PacKitReadyWorkspace.png" Component_="advinst.png" FileName="_PACKI~2.PNG|[PacKit]ReadyWorkspace.png" Attributes="0" SourcePath="Assets\[PacKit]ReadyWorkspace.png" SelfReg="false"/>
+    <ROW File="PacKitTools.png" Component_="advinst.png" FileName="_PACKI~3.PNG|[PacKit]Tools.png" Attributes="0" SourcePath="Assets\[PacKit]Tools.png" SelfReg="false"/>
+    <ROW File="updater.exe" Component_="updater.exe" FileName="updater.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS&gt;updater.exe" SelfReg="false" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.custcomp.AiControlAliasComponent">
+    <ROW AliasRowId="BrowseDlg#ProductNameTitle" AliasRowOperation="2" Text="[ProductNameTitleFont]Install [ProductName]?"/>
+    <ROW AliasRowId="AdminWelcomeDlg#ProductNameTitle" AliasRowOperation="2" Text="[ProductNameTitleFont]Install [ProductName]?"/>
+    <ROW AliasRowId="PrepareDlg#ProductNameTitle" AliasRowOperation="2" Text="[ProductNameTitleFont]Prepare [ProductName]?"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.custcomp.AiPropertyAliasComponent">
+    <ROW AliasRowId="Progress1" AliasRowOperation="2" Value="Preparing"/>
+    <ROW AliasRowId="Text_Install" AliasRowOperation="2" Value="Install"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AiPersistentPropComponent">
+    <ROW Property="AI_INSTALLED_PREREQS" Registry="AI_INSTALLED_PREREQS" HklmSearch="AI_INSTALLED_PREREQS" HkcuSearch="AI_INSTALLED_PREREQS_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_AppSearchEx" Condition="AI_BOOTSTRAPPER" Sequence="251"/>
+    <ROW Action="AI_DownloadPrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="695"/>
+    <ROW Action="AI_ExtractPrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="696"/>
+    <ROW Action="AI_InstallPrePrerequisite" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="697"/>
+    <ROW Action="AI_VerifyPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="698"/>
+    <ROW Action="AI_CleanPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="699"/>
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFileName="[|ProductName] - [|ProductVersion]" Languages="en" InstallationType="4" UseLargeSchema="true" UACExecutionLevel="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;suiteinstaller\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;suiteinstaller\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;suiteinstaller\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;suiteinstaller\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_InstallPrePrerequisite" Description="Configuring prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_VerifyPrePrereq" Description="Verifying prerequisites" DescriptionLocId="ActionText.Description.AI_VerifyPrereq" Template="[1] was not installed correctly." TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_INSTALLED_PREREQS" Signature_="AI_INSTALLED_PREREQS"/>
+    <ROW Property="AI_INSTALLED_PREREQS" Signature_="AI_INSTALLED_PREREQS_1"/>
+    <ROW Property="ADVANCEDINSTALLER2_OPEN_PATH" Signature_="AppSearchSign"/>
+    <ROW Property="PACKIT_OPEN_PATH" Signature_="AppSearchSign_1"/>
+    <ROW Property="POWERTOYSPREVIEW_OPEN_PATH" Signature_="AppSearchSign_2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="PowerShellScriptLauncher.dll" SourcePath="&lt;AI_CUSTACTS&gt;PowerShellScriptLauncher.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;AI_CUSTACTS&gt;viewer.exe" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="MaintenanceWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Description" Type="Text" X="16" Y="94" Width="458" Height="57" Attributes="196611" Text="The highlighted volumes do not have enough disk space available for the currently selected features. You can either remove some files from the highlighted volumes,or select different destination drive(s). Alternatively, you may choose to disable the installer&apos;s rollback functionality. Click Yes if you wish to take the risk to disable rollback." TextStyle="[DescriptionFont]" Order="400" TextLocId="AppInstaller.Control.Text.OutOfRbDiskDlg#Description" MsiKey="OutOfRbDiskDlg#Description"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="VolumeList" Type="VolumeCostList" X="16" Y="151" Width="458" Height="54" Attributes="393223" Text="{120}{70}{70}{70}{70}" TextStyle="ListFontDark" Order="500" TextLocId="Control.Text.OutOfDiskDlg#VolumeList" MsiKey="OutOfRbDiskDlg#VolumeList"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" Text="Install [ProductName]?" TextStyle="[ProductNameTitleFont]" Order="600" TextLocId="AppInstaller.Control.Text.ProductName" MsiKey="OutOfRbDiskDlg#ProductNameTitle"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" Text="Publisher: [Manufacturer]" TextStyle="[ManufacturerFont]" Order="700" TextLocId="AppInstaller.Control.Text.Manufacturer" MsiKey="OutOfRbDiskDlg#CompanyText"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="800" MsiKey="OutOfRbDiskDlg#ProductLogo"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" Text="Version: [ProductVersion]" TextStyle="[ManufacturerFont]" Order="900" TextLocId="AppInstaller.Control.Text.ProductVersion" MsiKey="OutOfRbDiskDlg#ProducVersionText"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" Order="1000" MsiKey="OutOfRbDiskDlg#AboutBtn" Options="1" ExtType="ImageButton" ExtData="[InfoIconMsi]"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="PatchWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL AND CustomInstallation" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="2" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="3" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_MAINT AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="4" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_MAINT" Ordering="0" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_MAINT" Ordering="1" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="202" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="203" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_PATCH AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="204" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_PATCH" Ordering="2" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_PATCH" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="99"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_RollbackPrePrereq" Condition="1" Ordering="201"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="201"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="202"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_ChooseTextStyles" Type="1" Source="aicustact.dll" Target="ChooseTextStyles"/>
+    <ROW Action="AI_CleanPrePrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="AFAAYQByAGEAbQBzAAIAAQBTAGMAcgBpAHAAdAACACMAUgBlAHEAdQBpAHIAZQBzACAALQB2AGUAcgBzAGkAbwBuACAAMwANAAoAUABhAHIAYQBtACgAKQANAAoADQAKACMAIABMAGUAdAAnAHMAIABzAGUAZQAgAHcAaABpAGMAaAAgAFAAbwB3AGUAcgBzAGgAZQBsAGwAIAB3AGUAJwByAGUAIAB1AHMAaQBuAGcALgAgAEYAZQBlAGwAIABmAHIAZQBlACAAdABvACAAcgBlAG0AbwB2AGUAIAB0AGgAaQBzACAAZgB1AG4AYwB0AGkAbwBuAA0ACgBGAHUAbgBjAHQAaQBvAG4AIABTAGEAeQAtAEgAZQBsAGwAbwAoACkAIABbAFwAewBdAA0ACgAgACAADQAKACAAIAAjACAAVwBoAGUAbgAgAHQAZQBzAHQAaQBuAGcAIABvAHIAIABkAGUAYgB1AGcAZwBpAG4AZwAgAHkAbwB1AHIAIABzAGMAcgBpAHAAdAAsACAAeQBvAHUAIABjAGEAbgAgAHEAdQBpAGMAawBsAHkAIABkAGkAcwBwAGwAYQB5ACAAYQAgAG0AZQBzAHMAYQBnAGUAIABiAG8AeAANAAoAIAAgAFsAXABbAF0AUwB5AHMAdABlAG0ALgBSAGUAZgBsAGUAYwB0AGkAbwBuAC4AQQBzAHMAZQBtAGIAbAB5AFsAXABdAF0AOgA6AEwAbwBhAGQAVwBpAHQAaABQAGEAcgB0AGkAYQBsAE4AYQBtAGUAKAAnAFMAeQBzAHQAZQBtAC4AVwBpAG4AZABvAHcAcwAuAEYAbwByAG0AcwAnACkADQAKACAAIABbAFwAWwBdAFMAeQBzAHQAZQBtAC4AVwBpAG4AZABvAHcAcwAuAEYAbwByAG0AcwAuAE0AZQBzAHMAYQBnAGUAQgBvAHgAWwBcAF0AXQA6ADoAUwBoAG8AdwAoACIAUwBjAHIAaQBwAHQAIABlAHgAZQBjAHUAdABlAGQAIABhAGYAdABlAHIAIABwAGEAYwBrAGEAZwBlACAAaQBuAHMAdABhAGwAbABhAHQAaQBvAG4AIQAiACkADQAKAFsAXAB9AF0ADQAKAA0ACgAjACAAWQBvAHUAcgAgAGMAbwBkAGUAIABnAG8AZQBzACAAaABlAHIAZQANAAoAUwBhAHkALQBIAGUAbABsAG8="/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="CustomActionData" Target="AFAAYQByAGEAbQBzAAIAAQBTAGMAcgBpAHAAdAACACMAUgBlAHEAdQBpAHIAZQBzACAALQB2AGUAcgBzAGkAbwBuACAAMwANAAoAUABhAHIAYQBtACgAKQANAAoADQAKACMAIABMAGUAdAAnAHMAIABzAGUAZQAgAHcAaABpAGMAaAAgAFAAbwB3AGUAcgBzAGgAZQBsAGwAIAB3AGUAJwByAGUAIAB1AHMAaQBuAGcALgAgAEYAZQBlAGwAIABmAHIAZQBlACAAdABvACAAcgBlAG0AbwB2AGUAIAB0AGgAaQBzACAAZgB1AG4AYwB0AGkAbwBuAA0ACgBGAHUAbgBjAHQAaQBvAG4AIABTAGEAeQAtAEgAZQBsAGwAbwAoACkAIABbAFwAewBdAA0ACgAgACAADQAKACAAIAAjACAAVwBoAGUAbgAgAHQAZQBzAHQAaQBuAGcAIABvAHIAIABkAGUAYgB1AGcAZwBpAG4AZwAgAHkAbwB1AHIAIABzAGMAcgBpAHAAdAAsACAAeQBvAHUAIABjAGEAbgAgAHEAdQBpAGMAawBsAHkAIABkAGkAcwBwAGwAYQB5ACAAYQAgAG0AZQBzAHMAYQBnAGUAIABiAG8AeAANAAoAIAAgAFsAXABbAF0AUwB5AHMAdABlAG0ALgBSAGUAZgBsAGUAYwB0AGkAbwBuAC4AQQBzAHMAZQBtAGIAbAB5AFsAXABdAF0AOgA6AEwAbwBhAGQAVwBpAHQAaABQAGEAcgB0AGkAYQBsAE4AYQBtAGUAKAAnAFMAeQBzAHQAZQBtAC4AVwBpAG4AZABvAHcAcwAuAEYAbwByAG0AcwAnACkADQAKACAAIABbAFwAWwBdAFMAeQBzAHQAZQBtAC4AVwBpAG4AZABvAHcAcwAuAEYAbwByAG0AcwAuAE0AZQBzAHMAYQBnAGUAQgBvAHgAWwBcAF0AXQA6ADoAUwBoAG8AdwAoACIAUwBjAHIAaQBwAHQAIABlAHgAZQBjAHUAdABlAGQAIABkAHUAcgBpAG4AZwAgAHAAYQBjAGsAYQBnAGUAIABkAG8AdwBuAGwAbwBhAGQAaQBuAGcAIABwAHIAbwBjAGUAcwBzACEAIgApAA0ACgBbAFwAfQBdAA0ACgANAAoAIwAgAFkAbwB1AHIAIABjAG8AZABlACAAZwBvAGUAcwAgAGgAZQByAGUADQAKAFMAYQB5AC0ASABlAGwAbABv"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FinishActions" Type="1" Source="aicustact.dll" Target="RunAllExitActions"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_InstallPrePrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrePrereq"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="LaunchApp"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RestartElevated" Type="1" Source="aicustact.dll" Target="RestartElevated"/>
+    <ROW Action="AI_RollbackPrePrereq" Type="65" Source="Prereq.dll" Target="RollbackPrePrereq" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_UPDATER_UNINSTALL" Type="82" Source="updater.exe" Target="/clean silent"/>
+    <ROW Action="AI_VerifyPrePrereq" Type="1" Source="Prereq.dll" Target="VerifyPrePrereq"/>
+    <ROW Action="PowerShellScriptAfterPackageInstallation" Type="1" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellScript" WithoutSeq="true" Options="1" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="PowerShellScriptBeforePackageInstallation" Type="1" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellScript" WithoutSeq="true" Options="1" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="SetProperty" Type="51" Source="AI_INSTALLED_PREREQS" Target="[AI_INSTALLED_PREREQS_IMPORTANT]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDrLocatorComponent">
+    <ROW Signature_="AppSearchSign" Path="[ProgramFilesFolder]Caphyon\Advanced Installer 22.9.1\bin\x86" Depth="0"/>
+    <ROW Signature_="AppSearchSign_1" Path="[ProgramFilesFolder]Caphyon\PacKit\bin_packit\x64" Depth="0"/>
+    <ROW Signature_="AppSearchSign_2" Path="[ProgramFiles64Folder]PowerToys" Depth="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="ExternalUi.exe"/>
+    <ROW Feature_="MainFeature" Component_="SuiteInstaller.exe"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_1"/>
+    <ROW Feature_="MainFeature" Component_="App.xbf"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_6"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_7"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_8"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_9"/>
+    <ROW Feature_="MainFeature" Component_="CoreMessagingXP.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_10"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_11"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_12"/>
+    <ROW Feature_="MainFeature" Component_="dcompi.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_13"/>
+    <ROW Feature_="MainFeature" Component_="dwmcorei.dll"/>
+    <ROW Feature_="MainFeature" Component_="DwmSceneI.dll"/>
+    <ROW Feature_="MainFeature" Component_="DWriteCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_14"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_15"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_16"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_17"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_18"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_19"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_20"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_21"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_22"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_23"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_24"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_25"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_26"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_27"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_28"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_29"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_30"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_31"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_32"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_33"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_34"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_35"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_36"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_37"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_38"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_39"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_40"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_41"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_42"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_43"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_44"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_45"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_46"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_47"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_48"/>
+    <ROW Feature_="MainFeature" Component_="marshal.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_49"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.DirectManipulation.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Graphics.Display.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.InputStateManager.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Internal.FrameworkUdk.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.Composition.OSSupport.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.Input.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.Windowing.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.Windowing.dll"/>
+    <ROW Feature_="MainFeature" Component_="map.html"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.Xaml.Controls.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.Xaml.Internal.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.UI.Xaml.Phone.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.resources.19h1.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.resources.common.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Windows.ApplicationModel.Resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Windows.Widgets.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.WindowsAppRuntime.Bootstrap.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.WindowsAppRuntime.Insights.Resource.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_50"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_51"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_52"/>
+    <ROW Feature_="MainFeature" Component_="MRM.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_53"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_54"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_55"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_56"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_57"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_58"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_59"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_60"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_61"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_62"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_63"/>
+    <ROW Feature_="MainFeature" Component_="PushNotificationsLongRunningTask.ProxyStub.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_64"/>
+    <ROW Feature_="MainFeature" Component_="RestartAgent.exe"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_65"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_66"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_67"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_68"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_69"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_70"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_71"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_72"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_73"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_74"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_75"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_76"/>
+    <ROW Feature_="MainFeature" Component_="Generic.xbf"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_77"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_78"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_79"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_80"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_81"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_82"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_83"/>
+    <ROW Feature_="MainFeature" Component_="WindowsAppSdk.AppxDeploymentExtensions.DesktopEventLogInstrumentation.dl"/>
+    <ROW Feature_="MainFeature" Component_="WindowsAppSdk.AppxDeploymentExtens_1_ions.Desktop.dll"/>
+    <ROW Feature_="MainFeature" Component_="WinUIEdit.dll"/>
+    <ROW Feature_="MainFeature" Component_="wuceffectsi.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_84"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.ui.xaml.dll.mui_85"/>
+    <ROW Feature_="MainFeature" Component_="AI_INSTALLED_PREREQS"/>
+    <ROW Feature_="MainFeature" Component_="advinst.png"/>
+    <ROW Feature_="MainFeature" Component_="updater.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="suite_installer.exe" SourcePath="Assets\suite_installer.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="AdditionalTerms" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="ADVANCEDINSTALLER2" Key="AdditionalTerms" Value="https://www.advancedinstaller.com/eula.html" Action="0" Component_="DwmSceneI.dll"/>
+    <ROW IniFile="AdditionalTerms_1" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="PACKIT" Key="AdditionalTerms" Value="https://www.advancedinstaller.com/eula.html" Action="0" Component_="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW IniFile="AllUsers" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="AllUsers" Value="[ALLUSERS]" Action="0" Component_="SuiteInstaller.exe"/>
+    <ROW IniFile="AppDir" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="AppDir" Value="[APPDIR]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ApplicationName" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="ApplicationName" Value="[ProductName]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ApplicationVersion" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="ApplicationVersion" Value="[ProductVersion]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="CheckFrequency" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="CheckFrequency" Value="2" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="CompanyName" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="CompanyName" Value="[Manufacturer]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="DefaultCommandLine" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="DefaultCommandLine" Value="/checknow" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="Description" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="ADVANCEDINSTALLER2" Key="Description" Value="Install latest version of Advanced Installer" Action="0" Component_="DwmSceneI.dll"/>
+    <ROW IniFile="Description_1" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="PACKIT" Key="Description" Value="Install latest version of PacKit" Action="0" Component_="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW IniFile="Display" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="ADVANCEDINSTALLER2" Key="Display" Value="Advanced Installer 22.9.1" Action="0" Component_="DwmSceneI.dll"/>
+    <ROW IniFile="Display_4" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="PACKIT" Key="Display" Value="PacKit" Action="0" Component_="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW IniFile="DownloadsFolder" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="DownloadsFolder" Value="[CommonAppDataFolder][Manufacturer]\[ProductName]\updates\" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ExternalUiPath" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="ExternalUiPath" Value="[#ExternalUi.exe]" Action="0" Component_="SuiteInstaller.exe"/>
+    <ROW IniFile="FeedbackLink" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="FeedbackLink" Value="[ARPURLINFOABOUT]" Action="0" Component_="SuiteInstaller.exe"/>
+    <ROW IniFile="Flags" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="Flags" Value="PerMachine|ShowConfigOptionsButton" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="HelpLink" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="HelpLink" Value="[ARPHELPLINK]" Action="0" Component_="SuiteInstaller.exe"/>
+    <ROW IniFile="ID" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="ID" Value="[UpgradeCode]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="Icon" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="ADVANCEDINSTALLER2" Key="Icon" Value="[#advinst.png]" Action="0" Component_="DwmSceneI.dll"/>
+    <ROW IniFile="Icon_1" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="PACKIT" Key="Icon" Value="[#packit.png]" Action="0" Component_="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW IniFile="Images" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="ADVANCEDINSTALLER2" Key="Images" Value="[#AdvInstBKG.png];[#AdvInstDigitalSignature.png];[#AdvInstProductDetails.png];[#AdvInstThemes.png]" Action="0" Component_="DwmSceneI.dll"/>
+    <ROW IniFile="Images_1" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="PACKIT" Key="Images" Value="[#PackItBKG.png];[#PacKitCatalog.png];[#PacKitReadyWorkspace.png];[#PacKitTools.png]" Action="0" Component_="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW IniFile="ProductCode" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="ProductCode" Value="[ProductCode]" Action="0" Component_="SuiteInstaller.exe"/>
+    <ROW IniFile="ProductName" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="ProductName" Value="[ProductName]" Action="0" Component_="SuiteInstaller.exe"/>
+    <ROW IniFile="Publisher" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="ADVANCEDINSTALLER2" Key="Publisher" Value="Caphyon" Action="0" Component_="DwmSceneI.dll"/>
+    <ROW IniFile="Publisher_1" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="PACKIT" Key="Publisher" Value="Caphyon" Action="0" Component_="Microsoft.WindowsAppRuntime.dll"/>
+    <ROW IniFile="RunAsAdmin" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="RunAsAdmin" Value="[AI_EXECUTION_LEVEL]" Action="0" Component_="SuiteInstaller.exe"/>
+    <ROW IniFile="URL" FileName="updater.ini" DirProperty="APPDIR" Section="General" Key="URL" Value="https://www.dropbox.com/scl/fi/xvv2bfxerpquyy62hkjvq/updates-config.txt?rlkey=x08f8yfs83z60dfruuv2wpbzi&amp;st=qint4h7w&amp;dl=0" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="UpdaterPath" FileName="SUITEI~1.INI|SuiteInstaller.ini" DirProperty="SuiteInstaller_Dir" Section="Properties" Key="UpdaterPath" Value="[#updater.exe]" Action="0" Component_="updater.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="SetProperty" Condition="AI_INSTALLED_PREREQS_IMPORTANT AND AI_INSTALLED_PREREQS_IMPORTANT &lt;&gt; &quot;|&quot;" Sequence="201"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+    <ROW Action="AI_UPDATER_UNINSTALL" Condition="($updater.exe = 2) AND (?updater.exe = 3) AND NOT (UPGRADINGPRODUCTCODE)" Sequence="1551"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_FinishActions" Condition="AI_INSTALL AND AiSkipExitDlg" Sequence="1301"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="54"/>
+    <ROW Action="AI_DpiContentScale" Sequence="53"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="52"/>
+    <ROW Action="AI_ChooseTextStyles" Sequence="74"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+    <ROW Action="AI_RestartElevated" Sequence="51" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 10240)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 10586)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 14393)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 15063)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 16299)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 17134)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 17763)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 18362)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 18363)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType = 1) OR (WindowsBuild &lt;&gt; 14393)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType = 1) OR (WindowsBuild &lt;&gt; 17763)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="( Version9X OR VersionNT64 OR ( VersionNT AND (VersionNT &lt;&gt; 601) AND (VersionNT &lt;&gt; 602) AND (VersionNT &lt;&gt; 603) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 10240)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 10586)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 14393)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 15063)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 16299)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 17134)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 17763)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 18362)) AND ((VersionNT &lt;&gt; 1000) OR (WindowsBuild &lt;&gt; 18363)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_INTERNET_CONNECTION" Description="[ProductName] requires an active Internet connection for installation. Please check your network configuration and proxy settings." DescriptionLocId="AI.LaunchCondition.Internet" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_INSTALLED_PREREQS" Root="2" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLED_PREREQS" Type="2"/>
+    <ROW Signature_="AI_INSTALLED_PREREQS_1" Root="1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLED_PREREQS" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_INSTALLED_PREREQS" Root="-1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="AI_INSTALLED_PREREQS" Value="[AI_INSTALLED_PREREQS]" Component_="AI_INSTALLED_PREREQS"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="UpgradeCode" Root="-1" Key="Software\[Manufacturer]\[UpgradeCode]" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="SuiteInstaller" Directory_="StartMenuFolder" Name="SUITEI~1|[|ProductName]" Component_="SuiteInstaller.exe" Target="[#SuiteInstaller.exe]" Hotkey="0" Icon_="suite_installer.exe" IconIndex="0" ShowCmd="1" WkDir="SuiteInstaller_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiSignatureComponent">
+    <ROW Signature="AppSearchSign" FileName="advinst.exe"/>
+    <ROW Signature="AppSearchSign_1" FileName="PacKit.exe"/>
+    <ROW Signature="AppSearchSign_2" FileName="PowerToys.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="suiteinstaller"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="ADVANCEDINSTALLER2" DisplayName="Advanced Installer 22.9.1" VersionMin="22.8" SetupFileUrl="https://www.advancedinstaller.com/downloads/22.9.1/advinst.msi" Location="1" ExactSize="0" Operator="1" ComLine="/qn" BasicUiComLine="/qn" NoUiComLine="/qn" Options="y" TargetName="Advanced Installer 22.9.1"/>
+    <ROW PrereqKey="PACKIT" DisplayName="PacKit" VersionMin="1.6.0" SetupFileUrl="https://advancedinstaller.com/tools/packit.msi" Location="1" ExactSize="0" Operator="1" ComLine="/qn" BasicUiComLine="/qn" NoUiComLine="/qn" Options="y" TargetName="PacKit"/>
+    <ATTRIBUTE name="PrereqsOrder" value="ADVANCEDINSTALLER2 PACKIT"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="UpgradeCode" Prereq="ADVANCEDINSTALLER2" SearchType="4" SearchString="{0468B821-8AD9-46E7-8BB5-65FBE3955791}" VerMin="22.8" Order="1" Property="PreReqSearch"/>
+    <ROW SearchKey="UpgradeCode_1" Prereq="PACKIT" SearchType="4" SearchString="{11F953BE-E637-470A-8E5C-629085DE1098}" VerMin="1.6.0" Order="1" Property="PreReqSearch_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.UpdaterComponent">
+    <ROW Updater="updater.exe" URL="URL" SearchFreq="CheckFrequency" DownloadsFolder="DownloadsFolder" ID="ID" TargetDir="AppDir" AppName="ApplicationName" AppVersion="ApplicationVersion" CompanyName="CompanyName" DefCommandLine="DefaultCommandLine" Flags="Flags" IconIndex="0" UnistallCASeq="AI_UPDATER_UNINSTALL" Description="[|UpdaterName] [|ProductVersion]"/>
+  </COMPONENT>
+</DOCUMENT>
