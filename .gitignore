@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Net Service Installation/MyDemoService/bin/Release
+/Net Service Installation/MyDemoService/obj
+/Net Service Installation/Net Service Demo-cache
+/Net Service Installation/Net Service Demo-SetupFiles
+/.vs
+/Net Service Installation/.vs/MyDemoService
