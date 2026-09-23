@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoViewer", "DemoViewer\DemoViewer.vcxproj", "{ABDB1F74-0EBD-407B-B329-B3ED3EED3F90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AbcPreviewHandler", "AbcPreviewHandler\AbcPreviewHandler.vcxproj", "{10F9E778-1C86-4783-B16F-27406975B65A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABDB1F74-0EBD-407B-B329-B3ED3EED3F90}.Debug|x64.ActiveCfg = Debug|x64
+		{ABDB1F74-0EBD-407B-B329-B3ED3EED3F90}.Debug|x64.Build.0 = Debug|x64
+		{ABDB1F74-0EBD-407B-B329-B3ED3EED3F90}.Release|x64.ActiveCfg = Release|x64
+		{ABDB1F74-0EBD-407B-B329-B3ED3EED3F90}.Release|x64.Build.0 = Release|x64
+		{10F9E778-1C86-4783-B16F-27406975B65A}.Debug|x64.ActiveCfg = Debug|x64
+		{10F9E778-1C86-4783-B16F-27406975B65A}.Debug|x64.Build.0 = Debug|x64
+		{10F9E778-1C86-4783-B16F-27406975B65A}.Release|x64.ActiveCfg = Release|x64
+		{10F9E778-1C86-4783-B16F-27406975B65A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
