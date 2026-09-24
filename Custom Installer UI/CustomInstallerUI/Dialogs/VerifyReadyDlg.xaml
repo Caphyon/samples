@@ -1,0 +1,12 @@
+<UserControl x:Class="CustomInstallerUI.Dialogs.VerifyReadyDlg"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel>
+        <TextBlock x:Name="ReadyTitle" FontSize="16" FontWeight="SemiBold"
+                   Foreground="{StaticResource AiBlue}"
+                   TextWrapping="Wrap" Text="Ready to Install"/>
+        <TextBlock x:Name="SummaryText" Margin="0,14,0,0" TextWrapping="Wrap"
+                   Foreground="#444444"/>
+        <TextBlock x:Name="ReadyBody" Margin="0,18,0,0" TextWrapping="Wrap"/>
+    </StackPanel>
+</UserControl>
