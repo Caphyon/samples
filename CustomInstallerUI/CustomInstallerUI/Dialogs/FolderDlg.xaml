@@ -1,0 +1,21 @@
+<UserControl x:Class="CustomInstallerUI.Dialogs.FolderDlg"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel>
+        <TextBlock TextWrapping="Wrap"
+                   Text="This is the folder where the application will be installed. To install in a different folder, enter it below or click Browse."/>
+        <TextBlock Text="Folder:" Margin="0,20,0,6"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="PathTextBox" Grid.Column="0"
+                     Height="26" VerticalContentAlignment="Center"
+                     BorderBrush="{StaticResource AiBlueLight}"/>
+            <Button Grid.Column="1" Content="Browse..." Width="90" Height="26"
+                    Style="{StaticResource AiSecondaryButton}"
+                    Margin="8,0,0,0" Click="BrowseButton_Click"/>
+        </Grid>
+    </StackPanel>
+</UserControl>
